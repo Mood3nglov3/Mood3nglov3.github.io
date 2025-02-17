@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jesuisunsiteweb</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+        .Mitr {
+            font-family: "Mitr", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 60px;
+            color: #052d40;
+        }
+
+        .Caveat {
+            font-family: "Caveat", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .Regular {
+            font-family: "League Script", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 60px;
+        }
+
+        .itim {
+            font-family: "Itim";
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        button {
+            padding: 17px 120px;
+            border-radius: 10px;
+            border: 0;
+            background-color: rgb(255, 56, 86);
+            letter-spacing: 1.5px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+            color: hsl(0, 0%, 100%);
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+        }
+
+        button:active {
+            background-color: rgb(255, 56, 86);
+            box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+            transform: translateY(5px);
+            transition: 200ms;
+        }
+
+        /* Make sure the iframe is visible */
+        #fishContainer {
+            width: 100%;
+            height: 100vh; /* Full screen */
+            border: none;
+            display: block;
+            margin-top: 50px; /* Space before fish section */
+        }
+
+        .background-page {
+            background-image: url("images/Fleur.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .bg-img {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .spin-hover {
+            transition: transform 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .spin-hover:hover {
+            transform: rotate(360deg);
+        }
+
+        body {
+            font-family: "itim";
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 50px; /* To avoid content getting hidden under the navbar */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #fdf6f6;
+            color: white;
+            padding: 5px 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: rgb(19, 7, 7);
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: #8f3a3a;
+        }
+
+        .content {
+            height: 12px;
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+        }
+    </style>
+
+    <body>
+        <div class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#fishSection">สารบัญ</a>
+            <a href="#info">จุดประสงค์</a>
+            <a href="#page1">กิจกรรม</a>
+            <a href="#page2">คณะ/สาขา</a>
+        </div>
+
+        <div class="bg-img">
+            <img src="images/Fleur.png" width="1903px">
+        </div>
+
+        <div class="row">
+            <div class="col-12" style="margin-left: 1803px;">
+                <a href="virus.html">
+                    <img src="images/Papong.png" width="100px" height="auto" style="position: absolute; bottom: 120px;">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/Plamun.png" class="spin-hover" onclick="location.reload();" width="150px" height="150px">
+        </div>
+
+        <div class="container" style="margin-bottom: 170px;">
+            <div class="row">
+                <div class="col-8">
+                    <br><br><br>
+                    <h1 class="Regular" style="rotate: -10deg; margin-bottom: 50px;">Français</h1>
+                    <h1 class="Mitr" style="font-weight: bold;">แนะนำแผนการเรียนภาษา
+                        <br>อังกฤษ-ภาษาฝรั่งเศส</h1>
+                    <br><br>
+                    <div class="col-8">
+                        <center><button id="scrollButton">Click here</button></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top: 300px;">
+            <div id="fishSection">
+                <iframe src="fish.html" width="100%" height="780px" style="border: none;"></iframe>
+            </div>
+            <div id="info">
+                <iframe src="info.html" width="100%" height="800px" style="border: none;"></iframe>
+            </div>
+            <div id="page1">
+                <iframe src="page1.html" width="100%" height="800px" style="border: none;"></iframe>
+            </div>
+            <div id="introduce">
+                <iframe src="introduce.html" width="100%" height="800px" style="border: none;"></iframe>
+            </div>
+            <div id="page2">
+                <iframe src="page2.html" width="100%" height="800px" style="border: none;"></iframe>
+            </div>
+        </div>
+
+        <script>
+
+
+
+            document.getElementById("scrollButton").addEventListener("click", function() {
+                document.getElementById("fishSection").scrollIntoView({ behavior: "smooth" });
+            });
+
+            let lastScrollTop = 0; // Track scroll position
+            const navbar = document.getElementById("navbar");
+
+            window.addEventListener("scroll", function() {
+                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+                // If scrolling down, hide the navbar
+                if (currentScroll > lastScrollTop) {
+                    navbar.style.top = "-60px"; // Adjust this value based on navbar height
+                } else {
+                    navbar.style.top = "0"; // Show navbar when scrolling up
+                }
+                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll position
+            });
+
+            
+        </script>
+    </body>
+</html>
